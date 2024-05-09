@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/020/436/077/original/retro-abstract-background-computer-wallpaper-geometrical-triangles-retro-vintage-wallpaper-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.formWrapped {
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    font-size: 24px;
+}
+
+.formWrapped label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.formWrapped input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 1em;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formWrapped button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formWrapped button:hover {
+    background-color: #0056b3;
+}
+
+.tableWrapped {
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.tableWrapped table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tableWrapped th,
+.tableWrapped td {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.tableWrapped th:last-child,
+.tableWrapped td:last-child {
+    border-right: none;
+}
+
+.tableWrapped th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+
+.tableWrapped td {
+    color: #666;
+}
+
+.tableWrapped tbody tr:hover {
+    background-color: #f7f7f7;
+}
+
+.tableWrapped tbody :empty:before {
+    content: "No hay productos registrados";
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para los botones de editar y eliminar en la tabla */
+.tableWrapped .button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* Importante para que el margen funcione */
+}
+
+.tableWrapped .button.editar {
+    background-color: #ffc107;
+    color: #333;
+    border: none; /* Asegura que no haya bordes en los botones */
+}
+
+.tableWrapped .button.eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.tableWrapped .button.editar:hover {
+    background-color: #e0a800;
+}
+
+.tableWrapped .button.eliminar:hover {
+    background-color: #c82333;
+}
